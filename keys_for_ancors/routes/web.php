@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('files', "AdminController@index");
+Route::post('files', "AdminController@finder")->name('files_send');
